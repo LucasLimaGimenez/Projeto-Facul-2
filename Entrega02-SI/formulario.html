@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Solution - Amigos da Onça</title>
+
+    <!-- Link do Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Link do Css  -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- link para o FontAwesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+</head>
+
+<body class="fundo-formulario">
+    <header class="cabecalho">
+        <div class="text-center">
+        <a href="#formulario"><img src="./img/logo.png" alt="" class="imagem"></a>
+        </div>
+
+        <nav class="pb-5 pt-4">
+            <ul>
+                <li><a href="index.html" class="arruma-home">Home</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    
+    <section id=formulario class="pb-5">
+
+        <h1 class="display-3 pt-5 pb-5 titulo-section text-center">Formulário de Compra</h1>
+
+        <form class="formulario text-light text-center mt-5"> 
+
+            <img src="./img/logo.png" alt="" class="imagem-formulario">
+            
+            <div class="dados pt-3">
+                <label for="nome">Nome do responsável pela viagem:</label>
+                <input type="text" class="input-text" id="nome" name="nome" maxlength="40" placeholder="Digite seu nome*" required>
+            </div>
+
+            <div class="dados">
+                <label for="email">Email do responsável:</label>
+                <input type="email" class="input-email" id="email" name="email" maxlength="40" placeholder="Digite seu E-Mail*" required>
+            </div>   
+
+            <div class="dados">
+                <label for="dataNasc">Data de nascimento do responsável:</label>
+                <input type="date" class="input-data" id="dataNasc" name="dataNasc" required>
+            </div>  
+
+            <div class="dados">
+                <label for="pessoas">Quantidade de pessoas:</label>
+                <input type="number" min="1" max="4" class="input-number" id="pessoas" name="pessoas" placeholder="Máximo de 4 pessoas" required>
+            </div>  
+            
+            <div class="dados">
+                <label for="dataViagem">Data da viagem:</label>
+                <input type="date" class="input-data" id="dataViagem" name="dataViagem"  required>
+            </div>  
+
+            <div class="dados">
+            <label for="formulario-hospedagem">Selecione a hospedagem: </label>
+                
+                <select class="dados" id="formulario-hospedagem" required> 
+                    <option value="Vale de Mo'ara">Vale de Mo'ara</option>
+                    <option value="Na'vi River">Na'vi River</option>
+                    <option value="A árvore das almas">A árvore das almas</option>
+                    <option value="A árvore das Vozes">A árvore das Vozes</option>
+                </select>
+                
+            </div>
+
+            <input type="submit" class="input-enviar" name="acao" value="Finalizar Compra">
+        </form>
+    </section>
+
+    <section class="text-center">
+        <h1 class="display-3 pt-5 pb-5 titulo-section">Relatório de hospedagens</h1>
+
+        <div class="text-center">
+            <table id="relatorio" class="table-responsive text-center">
+                <thead class="text-center">
+                    <tr id="cabecalho-relatorio text-center">
+                        <th class="nome">Nome responsável</th>
+                        <th class="email">Email   responsável</th>
+                        <th class="nascimento">Data nascimento</th>
+                        <th class="viajante">Quantidade Viajantes</th>
+                        <th class="viagem">Data viagem</th>
+                        <th class="local">Local hospedagem</th>
+                        <th class="valor-hospedagem">Valor hospedagem</th>
+                        <th class="valor-translado">Valor translado</th>
+                        <th class="valor-final">Custo totalizado</th>
+                    </tr>
+                </thead>
+                <tbody class="historico">                       
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <div class="text-center pt-3">
+            <a href="#"><img src="./img/logo.png" alt="" class="imagem"></a>
+        </div>
+
+        <h3 class="display-4 text-white pb-3 text-center titulo-responsivo">Gostou? Quer receber as melhores promoções?</h3>
+
+        <div class="text-center">
+            <h4 class="text-light mt-4 subtitulo-responsivo">Nos siga nas redes sociais e fique atento as novidades</h4>
+            <a href="https://www.instagram.com/" target="blank"><i class="fab fa-instagram tamanho-icone"></i></a>
+            <a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook tamanho-icone"></i></a>
+            <a href="https://www.twitter.com/" target="blank"><i class="fab fa-twitter tamanho-icone"></i></a>
+            <a href="https://www.reddit.com/" target="blank"><i class="fab fa-reddit tamanho-icone" ></i></a>
+            <a href="https://br.pinterest.com/" target="blank"><i class="fab fa-pinterest tamanho-icone"></i></a>
+        </div>
+    </footer>
+
+    <script src="./js/relatorio.js"></script>
+</body>
+
+</html>

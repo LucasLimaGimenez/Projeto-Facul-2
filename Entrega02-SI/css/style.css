@@ -1,0 +1,675 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+}
+
+.cabecalho{
+    background-color: #191970;
+}
+
+.rodape{
+    background-color: #191970;
+}
+
+.imagem{
+    width: 300px;
+    height: 150px;
+    margin:20px 0 40px 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: wrap;
+    align-items: center;
+    list-style: none;
+    text-decoration:none;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li{
+    text-align: center;
+    width: 100%;
+}
+
+.menu-opcoes{
+    display: inline-block;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    width: 95%;
+    border: 1px solid black;
+    border-radius: 40px;
+    color:aqua;
+    font-size: 29px;
+    font-weight: 600;
+    font-family: 'Bree Serif', serif;
+}
+
+.menu-opcoes:hover{
+    background-color:aqua;
+    color: #191970;
+    text-decoration: none;
+}
+
+.titulo-section{
+    color: aqua;
+}
+
+.alinha-imagem{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.alinha-hospedagem{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.alinha-vertical{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.alinha-horizontal{
+    display: flex;
+}
+
+.imagem-texto{
+    width: 90%;
+}
+
+.imagem-hospedagem{
+    width: 40%;
+}
+
+#somos{
+    background-image:url("../img/espaco.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+#importancia{
+    background-image:url("../img/espaco2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+#hospedagem{
+    background-image:url("../img/espaco3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+#imagem{
+    background-image:url("../img/espaco.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+#pandora{
+    background-image:url("../img/espaco2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+#comprar{
+    background-image:url("../img/espaco.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.fundo-formulario{
+    background-image:url("../img/espaco.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.formatando-texto{
+    width: 60%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.alinhando-botao{
+    text-align: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+
+.formatando-botao{
+    border: 1px solid black;
+    font-size: 40px;
+    font-weight: 600;
+    padding: 40px;
+    padding-right:80px ;
+    border-radius: 30px;
+    background-color: #191970;
+    color: aqua;
+    background-image: url("../img/nave.png");
+    background-repeat: no-repeat;
+    background-position: 97%;
+}
+
+.formatando-botao:hover{
+    text-decoration: none;
+    background-color: aqua;
+    color: #191970;
+    background-image: url("../img/nave-hover.png");
+    background-repeat: no-repeat;
+    background-position: 97%;
+}
+
+.arruma-home{
+    padding: 10px 200px 10px 200px;
+    margin-bottom: 60px;
+    border: 1px solid black;
+    border-radius: 40px;
+    color:aqua;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Bree Serif', serif;
+}
+
+.arruma-home:hover{
+    background-color:aqua;
+    color: #191970;
+    text-decoration: none;
+}
+
+.alinha-cabecalho{
+    text-align: center;
+    align-items: center;
+}
+
+
+.tamanho-icone{
+    margin-top: 20px;
+    font-size: 50px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color:aqua;
+}
+
+.fa-instagram:hover{
+    color: #7232bd;
+}
+
+.fa-facebook:hover{
+    color:#3b5998;
+}
+
+.fa-twitter:hover{
+    color:#0992c8;
+}
+
+.fa-reddit:hover{
+    color: #ff4301 ;
+}
+
+.fa-pinterest:hover{
+    color: #c8232c ;
+}
+
+.fa-discord:hover{
+    color: #738adb;
+}
+
+.formulario{
+    width: 500px;
+    padding: 30px;
+    border:1px solid #ccc;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+.dados{
+    width: 100%;
+    margin: 15px 0px;
+}
+.dados label, 
+.dados span{
+    padding-left: 10px;
+    font-size: 1.1em;
+    display: block;
+    width: 100%;
+}
+.radiobox label{
+    width: auto;
+    display: inline-block;
+}
+.input-text,
+.input-email,
+.input-data,
+.input-number,
+textarea{
+    width: 100%;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    outline: none;
+    text-align: center;
+}
+
+textarea{
+    line-height: 20px;
+    padding: 10px;
+    height: 90px;
+    resize: none;
+}
+
+.input-enviar{
+    display: block;
+    background-color: #191970;
+    color: aqua;
+    font-weight: 600;
+    font-size: 26px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    width: 60%;
+    height: 70px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.input-enviar:hover{
+    background-color: aqua;
+    color: #191970;
+}
+
+.imagem-formulario{
+    width: 350px;
+    height: 200px;
+}
+
+.arredondamento{
+    border-radius: 30px;
+    padding: 30px;
+    background-color: #191970;
+}
+
+td{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid #191970;
+}
+
+#relatorio thead th {
+    vertical-align: bottom;
+    border: 2px solid aqua;
+    padding: 7px;
+    font-size: 22px;
+}
+
+#relatorio{
+    text-align: center;
+    margin: 50px auto;
+}
+
+#relatorio thead{
+    background-color:#191970;
+    font-weight: bold;
+    color: aqua;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px){
+
+    body{
+        font-size: 24px;
+    }
+
+    .imagem{
+        width: 400px;
+        height: 250px;
+    }
+
+    nav{
+        flex-direction: column;     
+    }
+
+    nav ul{
+        width: 100%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .menu-opcoes{
+        font-size: 40px;
+        width: 100%;
+    }
+
+    .titulo-section{
+        font-size: 60px;
+    }
+    
+    .formatando-texto{
+        width: 80%;
+    }
+
+    .imagem-texto{
+        width: 500px;
+        height: 400px;
+        margin: 0 auto;
+    }
+
+    .alinha-imagem{
+        flex-direction: column;
+    }
+
+    .alinha-horizontal{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .titulo-responsivo{
+        font-size: 30px;
+    }
+
+    .subtitulo-responsivo{
+        font-size: 20px;
+    }
+
+    .tamanho-icone{
+        font-size: 40px;
+    }
+
+    .alinha-titulo{
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .imagem-hospedagem{
+        width: 500px;
+        height: 400px;
+        margin: 0 auto;
+    }
+
+    .formatando-botao{
+        background-size: 55px 100px;
+        padding-right: 80px;
+        background-position: 97%;
+    }
+
+    .formatando-botao:hover{
+        background-size: 55px 100px;
+        padding-right: 80px;
+        background-position: 97%;
+    }
+
+    #relatorio thead th {
+        font-size: 20px;
+    }
+
+    td{
+        font-size: 17px;
+    }
+
+}
+
+@media screen and (max-width: 767px) and (min-width: 321px){
+
+    body{
+        font-size: 15px;
+    }
+
+    nav{
+        flex-direction: column;     
+    }
+
+    nav ul{
+        width: 100%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .menu-opcoes{
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .titulo-section{
+        font-size: 30px;
+    }
+    
+    .formatando-texto{
+        width: 80%;
+    }
+
+    .imagem-texto{
+        width: 270px;
+        height: 290px;
+        margin: 0 auto;
+    }
+
+    .alinha-imagem{
+        flex-direction: column;
+    }
+
+    .alinha-horizontal{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .titulo-responsivo{
+        font-size: 30px;
+    }
+
+    .subtitulo-responsivo{
+        font-size: 20px;
+    }
+
+    .tamanho-icone{
+        font-size: 40px;
+    }
+
+    .imagem-hospedagem{
+        width: 270px;
+        height: 290px;
+        margin: 0 auto;
+    }
+
+    .alinhando-botao{
+        padding-top: 20px;
+        padding-bottom: 80px;
+    }
+
+    .formatando-botao{
+        font-size: 20px;
+        padding: 20px;
+        font-weight: 600;
+        border-radius: 20px;
+    }
+
+    .formatando-botao{
+        background-size: 30px 55px;
+        padding-right: 50px;
+        background-position: 94%;
+    }
+
+    .formatando-botao:hover{
+        background-size: 30px 55px;
+        padding-right: 50px;
+        background-position: 94%;
+    }
+
+    .arruma-home{
+        padding: 10px 100px 10px 100px;
+        font-size: 25px;
+    }
+
+    .formulario{
+        width: 300px;
+    }
+
+    .imagem-formulario{
+        width: 200px;
+        height: 150px;
+    }
+
+    .input-enviar{
+        font-size: 20px;
+        width: 80%;
+        height: 50px;
+    }
+
+    #relatorio thead th {
+        font-size: 14px;
+    }
+
+    td{
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width: 320px){
+
+    .imagem{
+        width: 200px;
+        height: 150px;
+    }
+
+    body{
+        font-size: 13px;
+    }
+
+    nav{
+        flex-direction: column;     
+    }
+
+    nav ul{
+        width: 100%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .menu-opcoes{
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .titulo-section{
+        font-size: 29px;
+    }
+    
+    .formatando-texto{
+        width: 80%;
+    }
+
+    .imagem-texto{
+        width: 200px;
+        height: 220px;
+        margin: 0 auto;
+    }
+
+    .alinha-imagem{
+        flex-direction: column;
+    }
+
+    .alinha-horizontal{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .titulo-responsivo{
+        font-size: 20px;
+    }
+
+    .subtitulo-responsivo{
+        font-size: 20px;
+    }
+
+    .tamanho-icone{
+        font-size: 40px;
+    }
+
+    .imagem-hospedagem{
+        width: 220px;
+        height: 220px;
+        margin: 0 auto;
+    }
+
+    .alinhando-botao{
+        padding-top: 20px;
+        padding-bottom: 80px;
+    }
+
+    .formatando-botao{
+        font-size: 20px;
+        padding: 20px;
+        font-weight: 600;
+        border-radius: 20px;
+    }
+
+    .formatando-botao{
+        background-size: 30px 55px;
+        padding-right: 50px;
+        background-position: 94%;
+    }
+
+    .formatando-botao:hover{
+        background-size: 30px 55px;
+        padding-right: 50px;
+        background-position: 94%;
+    }
+
+    .arruma-home{
+        padding: 10px 70px 10px 70px;
+        font-size: 25px;
+    }
+
+    .formulario{
+        width: 260px;
+    }
+
+    .imagem-formulario{
+        width: 200px;
+        height: 150px;
+    }
+
+    .input-enviar{
+        font-size: 20px;
+        width: 100%;
+        height: 50px;
+    }
+
+    #relatorio thead th {
+        font-size: 14px;
+    }
+
+    td{
+        font-size: 12px;
+    }
+
+}
